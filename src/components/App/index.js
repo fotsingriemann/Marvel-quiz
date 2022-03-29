@@ -7,24 +7,33 @@ import Welcome from '../Welcome'
 import Login from '../Login'
 import Signup from '../Singup'
 import Errorpage from '../ErrorPage'
+import ForgetPassword from '../ForgetPassword'
+import QuizOver from '../QuizOver'
 import './../../App.css';
+import {IconContext} from 'react-icons'
 
 
 function App() {
   return (
     <Router>
 
-      <Header />
+    <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
 
-      <Switch>
-        <Route exact path='/' component={Landing} />
-        <Route path='/welcome' component={Welcome} />
-        <Route path='/login' component={Login} />
-        <Route path='/signup' component={Signup} />
-        <Route component={Errorpage} />
-      </Switch>
-      
-      <Footer />
+        <Header />
+
+        <Switch>
+          <Route exact path='/' component={Landing} />
+          <Route path='/welcome' component={Welcome} />
+          <Route path='/login' component={Login} />
+          <Route path='/signup' component={Signup} />
+          <Route path='/forgetpassword' component={ForgetPassword}/>
+          <Route path='/quizover' component={QuizOver}/>
+          <Route component={Errorpage} />
+        </Switch>
+        
+        <Footer />
+
+    </IconContext.Provider>
 
     </Router>
   );

@@ -1,5 +1,7 @@
-import app from 'firebase/compat/app';
-import 'firebase/compat/auth'
+import app from 'firebase/app';
+import 'firebase/auth'
+import 'firebase/firestore'
+
 const Config = {
   apiKey: "AIzaSyA5wm2ianW8oE2A9VBQtoATzPfhIRf9GGM",
   authDomain: "marvel-quiz-8b891.firebaseapp.com",
@@ -13,10 +15,10 @@ class Firebase{
     constructor(){
         app.initializeApp(Config)
         this.auth = app.auth()
+        this.db = app.firestore()
     }
 
     // inscription
-
     signupUser = (email, password) => 
         this.auth.createUserWithEmailAndPassword(email, password)
     
@@ -29,6 +31,16 @@ class Firebase{
 
     signoutUser = () =>
         this.auth.signOut()
+
+    // reset the password
+
+    passwordReset = email => {
+        this.auth.sendPasswordResetEmail(email)
+    }
+    
+
+    user = uid => this.db.doc('users/'+uid);
+
 }
 
 export default Firebase

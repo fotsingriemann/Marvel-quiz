@@ -291,6 +291,7 @@ footer {
 .formContent .inputBox {
   position: relative;
   height: 80px;
+  background: transparent;
 }
 
 .formContent .inputBox input {

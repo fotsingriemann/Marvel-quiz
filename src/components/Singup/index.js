@@ -1,7 +1,9 @@
 import React from 'react'
 import FirebaseContext from './../Firebase/contexte'
+import { Link } from 'react-router-dom'
 
-const Signup = () => {
+
+const Signup = (props) => {
 
     const firebase = React.useContext(FirebaseContext)
 
@@ -20,8 +22,15 @@ const Signup = () => {
         e.preventDefault()
         const {email, password} = loginData
         firebase.signupUser(email, password)
-        .then(user => {
+        .then(authUser => {
+            return firebase.user(authUser.user.uid).set({
+                pseudo,
+                email
+            })
+        })
+        .then(() => {
             setLoginData({...data})
+            props.history.push('/welcome')
         })
         .catch(error => {
             setError(error)
@@ -69,6 +78,9 @@ const Signup = () => {
                             </div>
                             {btn}
                         </form>
+                        <div className='linkContainer'>
+                            <Link className='simpleLink' to='/login'>Deja inscrit? connectez-vous</Link>
+                        </div>
                     </div>
                 </div>
             
