@@ -11,30 +11,35 @@ import ForgetPassword from '../ForgetPassword'
 import QuizOver from '../QuizOver'
 import './../../App.css';
 import {IconContext} from 'react-icons'
-
+import {MathJaxContext} from 'better-react-mathjax'
 
 function App() {
+
+    const config = {
+        loader: { load: ["input/asciimath"] }
+    };
+
   return (
     <Router>
+      <MathJaxContext config={config}>
+        <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
 
-    <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
+            <Header />
 
-        <Header />
+            <Switch>
+              <Route exact path='/' component={Landing} />
+              <Route path='/welcome' component={Welcome} />
+              <Route path='/login' component={Login} />
+              <Route path='/signup' component={Signup} />
+              <Route path='/forgetpassword' component={ForgetPassword}/>
+              <Route path='/quizover' component={QuizOver}/>
+              <Route component={Errorpage} />
+            </Switch>
+            
+            <Footer />
 
-        <Switch>
-          <Route exact path='/' component={Landing} />
-          <Route path='/welcome' component={Welcome} />
-          <Route path='/login' component={Login} />
-          <Route path='/signup' component={Signup} />
-          <Route path='/forgetpassword' component={ForgetPassword}/>
-          <Route path='/quizover' component={QuizOver}/>
-          <Route component={Errorpage} />
-        </Switch>
-        
-        <Footer />
-
-    </IconContext.Provider>
-
+        </IconContext.Provider>
+      </MathJaxContext>
     </Router>
   );
 }

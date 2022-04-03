@@ -6,7 +6,7 @@ import {QuizMarvel} from '../QuizMarvel'
 import Levels from '../Levels'
 import ProgressBar from '../ProgressBar'
 import QuizOver from '../QuizOver'
-import MathJaxContext from 'better-react-mathjax'
+import {MathJax} from 'better-react-mathjax'
 
 toast.configure()
 
@@ -231,7 +231,7 @@ class Quiz extends Component{
 
 
         const theOptions = (this.state.options.map((option, index) => {
-            return  <p key={index} onClick={() => this.handleChange(option)} className={this.state.userAnswer === option ? 'answerOptions selected' : 'answerOptions'} style={{display:'flex'}}> <FaChevronRight />  {option} </p>
+            return  <p key={index} onClick={() => this.handleChange(option)} className={this.state.userAnswer === option ? 'answerOptions selected' : 'answerOptions'} style={{display:'flex'}}>   <MathJax>{option}</MathJax> </p>
         }))
 
         return this.state.gameEnd ?
@@ -246,10 +246,8 @@ class Quiz extends Component{
                 idQuestion={this.state.idQuestion}
                 maxQuestion={this.state.maxQuestion}
                 />
-                {/* <h2>{this.state.question}</h2> */}
-                <MathJaxContext>
-                    
-                </MathJaxContext>
+                <h2><MathJax>{this.state.question}</MathJax></h2>
+                
                 {theOptions}
                 <button disabled={this.state.disabled} className='btnSubmit' onClick={this.nextQuestion}> 
                 

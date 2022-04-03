@@ -531,6 +531,7 @@ input:checked+.slider:before {
 /* ANSWER OPTIONS*/
 .answerOptions {
   padding: 10px;
+  padding-left: 36px;
   background-color: var(--light-grey-color);
   line-height: 20px;
   text-align: left;
@@ -681,6 +682,7 @@ input:checked+.slider:before {
   background-color: var(--red-color);
   color: var(--white-color);
   text-transform: uppercase;
+  font-size: 20px;
 }
 /* END SUBMIT BUTTON */
 

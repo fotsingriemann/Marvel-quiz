@@ -6,36 +6,36 @@ export const QuizMarvel = [
             debutant: [
                 {
                     id: 0,
-                    question: "De quelle équipe fait partie Iceman?",
+                    question: "\\begin{equation}\\left\\{\\begin{array}{cc} x & + & y & = & 2 \\\\ 2x & - & y & = & 1 \\end{array}\\right. \\end{equation} la solution de cette equation est:",
                     options: [
-                        "The X-Men",
-                        "The Fantastic Four",
-                        "The Invaders",
-                        "The Liberators"
+                        "\\begin{equation} \\left\\{(1 , 2)\\right\\} \\end{equation}",
+                        "\\begin{equation} \\left\\{(1 , 1)\\right\\} \\end{equation}",
+                        "\\begin{equation} \\left\\{(\\frac{1}{3} , \\frac{2}{7})\\right\\} \\end{equation}",
+                        "\\begin{equation} \\left\\{(-6 , 1)\\right\\} \\end{equation}"
                     ],
-                    answer: "The X-Men",
+                    answer: "\\begin{equation} \\left\\{(1 , 1)\\right\\} \\end{equation}",
                     heroId: 1009362
                 },
                 {
                     id: 1,
-                    question: "Dans les X-Men, quelle substance constitue le squelette de Wolverine ?",
+                    question: "\\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ -1 & 4 & 2 \\\\ -2 & -1 & 3 \\end{array} \\right) \\begin{array}{ccc} L_1 \\\\ L_2 \\\\ L_3 \\end{array} \\end{equation} la matrice echelonne resultante de cette derniere est:",
                     options: [
-                        "Cavorite",
-                        "Vibranium",
-                        "Adamantium",
-                        "Neutronium"
+                        "\\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 3 & 5 \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2\\leftarrow L_2 + L1 \\\\ L_3\\leftarrow L_3 + 2L_1 \\end{array} \\right. \\end{equation} \\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & \\frac{7}{2} \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2 \\\\ L_3\\leftarrow L_3 - \\frac{1}{2}L_2 \\end{array} \\right. \\end{equation}",
+                        "\\begin{equation} \\left(\\begin{array}{ccc} \\frac{1}{3} & 5 & \\frac{7}{3} \\\\ 0 & \\frac{5}{3} & 2 \\\\ 0 & 0 & 4 \\end{array} \\right) \\left.\\begin{array}{ccc}  L_1 \\\\ L_2\\leftarrow L_2 + L1 \\\\ L_3\\leftarrow L_3 + 2L_1 \\end{array} \\right. \\end{equation} \\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & \\frac{7}{2} \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2 \\\\ L_3\\leftarrow L_3 - \\frac{1}{2}L_2 \\end{array} \\right. \\end{equation}",
+                        "\\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & -5 & 2 \\\\ 0 & 0 & 4 \\end{array} \\right) \\left.\\begin{array}{ccc}  L_1 \\\\ L_2\\leftarrow L_2 + L1 \\\\ L_3\\leftarrow L_3 + 2L_1 \\end{array} \\right. \\end{equation} \\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & \\frac{7}{2} \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2 \\\\ L_3\\leftarrow L_3 - \\frac{1}{2}L_2 \\end{array} \\right. \\end{equation}",
+                        "\\begin{equation} \\left(\\begin{array}{ccc} \\frac{1}{2} & \\frac{1}{4} & 7 \\\\ 0 & \\frac{1}{5} & 2 \\\\ 0 & 0 & -1 \\end{array} \\right) \\left.\\begin{array}{ccc}  L_1 \\\\ L_2\\leftarrow L_2 + L1 \\\\ L_3\\leftarrow L_3 + 2L_1 \\end{array} \\right. \\end{equation} \\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & \\frac{7}{2} \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2 \\\\ L_3\\leftarrow L_3 - \\frac{1}{2}L_2 \\end{array} \\right. \\end{equation}"
                     ],
-                    answer: "Adamantium",
+                    answer: "\\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 3 & 5 \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2\\leftarrow L_2 + L1 \\\\ L_3\\leftarrow L_3 + 2L_1 \\end{array} \\right. \\end{equation} \\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & \\frac{7}{2} \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2 \\\\ L_3\\leftarrow L_3 - \\frac{1}{2}L_2 \\end{array} \\right. \\end{equation}",
                     heroId: 1009718
                 },
                 {
                     id: 2,
-                    question: "Quel est le nom de Spider-Man, apparu pour la première fois en 1962 ?",
+                    question: "\\begin{equation}\\left\\{\\begin{array}{ccccccccc} 2x & + & 4y & - & 5z & + & 8t & = & 9 \\\\ x & - & y & +  & 3z & - & 2t & = & 1 \\\\ 2x & - & y & +  & z & + & t & = & 3 \\\\ 2x & + & 4y & -  & 10z & - & 2t & = & -6 \\end{array} \\right. \\end{equation} en mettant ce systeme sur la forme d'une matrice augmente AX = b on obtient:",
                     options: [
-                        "Tom Parker",
-                        "John Parker",
-                        "Peter Parker",
-                        "Alan Parker"
+                        "\\begin{equation}\\left(\\begin{array}{cccc} 2  & 4 & -5 & 8 \\\\ 1 & -1 & 3 & -2 \\\\ 2 & -1 & 1 & 1 \\\\ 2 & 4 & -10 & -2 \\end{array}\\right. \\left|\\begin{array}{c} 9 \\\\ 1 \\\\ 3 \\\\ -6 \\end{array}\\right) \\end{equation}",
+                        "\\begin{equation}\\left(\\begin{array}{cccc} 2  & 4 & -6 & 8 \\\\ 1 & -1 & 3 & -2 \\\\ 2 & -1 & 1 & 1 \\\\ 2 & 3 & -10 & -2 \\end{array}\\right. \\left|\\begin{array}{c} 10 \\\\ -1 \\\\ 3 \\\\ -6 \\end{array}\\right) \\end{equation}",
+                        "\\begin{equation}\\left(\\begin{array}{cccc} -2  & -4 & -5 & 8 \\\\ 1 & -1 & 3 & -2 \\\\ 2 & -1 & -1 & 1 \\\\ 2 & 2 & -10 & -2 \\end{array}\\right. \\left|\\begin{array}{c} 9 \\\\ 1 \\\\ 13 \\\\ -6 \\end{array}\\right) \\end{equation}",
+                        "\\begin{equation}\\left(\\begin{array}{cccc} \\frac{1}{3}  & 4 & -5 & 8 \\\\ 1 & -1 & 3 & -2 \\\\ 2 & -1 & 1 & 1 \\\\ 1 & 2 & -5 & -1 \\end{array}\\right. \\left|\\begin{array}{c} 9 \\\\ 1 \\\\ 3 \\\\ -3 \\end{array}\\right) \\end{equation}",
                     ],
                     answer: "Peter Parker",
                     heroId: 1009610
@@ -250,7 +250,7 @@ export const QuizMarvel = [
             "expert": [
                 {
                     id: 0,
-                    question: "Quand elle a travaillé pour Hydra, la première mission de Spider-Woman était de...",
+                    question: "",
                     options: [
                         "Séduire Iron-Man",
                         "Séduire Spider-Man",
