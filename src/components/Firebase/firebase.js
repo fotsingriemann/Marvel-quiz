@@ -41,6 +41,23 @@ class Firebase{
 
     user = uid => this.db.doc('users/'+uid);
 
+    
+    getAllUsers = async()=>{
+
+        var users = []
+
+        const response = this.db.collection('users');
+
+        const data = await response.get();
+
+        data.docs.forEach(item => {
+            users.push(item.data())
+        })
+        return users
+
+    }
+
+
 }
 
 export default Firebase

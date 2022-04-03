@@ -13,8 +13,20 @@ const Signup = (props) => {
         password:'',
         confirmpassword:''
     }
+      
+      
+
 
     const [loginData, setLoginData] = React.useState(data)
+    const [users,setUsers] = React.useState([])
+
+     React.useEffect(() => {
+
+        const dest = firebase.getAllUsers()
+        console.log(dest)
+
+     }, [firebase.getAllUsers()])
+     
 
     const [error, setError] = React.useState('')
 
@@ -37,6 +49,11 @@ const Signup = (props) => {
             setLoginData({...data})
         })
     }
+
+
+    
+    
+
 
     const errorMsg = error !== '' && <span>{error.message}</span>
     
