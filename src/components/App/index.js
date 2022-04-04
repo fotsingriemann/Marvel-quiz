@@ -15,13 +15,11 @@ import {MathJaxContext} from 'better-react-mathjax'
 
 function App() {
 
-    const config = {
-        loader: { load: ["input/asciimath"] }
-    };
+  
 
   return (
     <Router>
-      <MathJaxContext config={config}>
+      <MathJaxContext>
         <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
 
             <Header />
@@ -39,7 +37,7 @@ function App() {
             <Footer />
 
         </IconContext.Provider>
-      </MathJaxContext>
+        </MathJaxContext>
     </Router>
   );
 }

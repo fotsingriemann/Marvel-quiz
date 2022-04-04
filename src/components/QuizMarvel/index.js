@@ -6,19 +6,7 @@ export const QuizMarvel = [
             debutant: [
                 {
                     id: 0,
-                    question: "\\begin{equation}\\left\\{\\begin{array}{cc} x & + & y & = & 2 \\\\ 2x & - & y & = & 1 \\end{array}\\right. \\end{equation} la solution de cette equation est:",
-                    options: [
-                        "\\begin{equation} \\left\\{(1 , 2)\\right\\} \\end{equation}",
-                        "\\begin{equation} \\left\\{(1 , 1)\\right\\} \\end{equation}",
-                        "\\begin{equation} \\left\\{(\\frac{1}{3} , \\frac{2}{7})\\right\\} \\end{equation}",
-                        "\\begin{equation} \\left\\{(-6 , 1)\\right\\} \\end{equation}"
-                    ],
-                    answer: "\\begin{equation} \\left\\{(1 , 1)\\right\\} \\end{equation}",
-                    heroId: 1009362
-                },
-                {
-                    id: 1,
-                    question: "\\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ -1 & 4 & 2 \\\\ -2 & -1 & 3 \\end{array} \\right) \\begin{array}{ccc} L_1 \\\\ L_2 \\\\ L_3 \\end{array} \\end{equation} la matrice echelonne resultante de cette derniere est:",
+                    question: "\\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ -1 & 4 & 2 \\\\ -2 & -1 & 3 \\end{array} \\right) \\begin{array}{ccc} L_1 \\\\ L_2  \\\\ L_3 \\end{array} \\end{equation} la matrice echelonne resultante de cette derniere est:",
                     options: [
                         "\\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 3 & 5 \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2\\leftarrow L_2 + L1 \\\\ L_3\\leftarrow L_3 + 2L_1 \\end{array} \\right. \\end{equation} \\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & \\frac{7}{2} \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2 \\\\ L_3\\leftarrow L_3 - \\frac{1}{2}L_2 \\end{array} \\right. \\end{equation}",
                         "\\begin{equation} \\left(\\begin{array}{ccc} \\frac{1}{3} & 5 & \\frac{7}{3} \\\\ 0 & \\frac{5}{3} & 2 \\\\ 0 & 0 & 4 \\end{array} \\right) \\left.\\begin{array}{ccc}  L_1 \\\\ L_2\\leftarrow L_2 + L1 \\\\ L_3\\leftarrow L_3 + 2L_1 \\end{array} \\right. \\end{equation} \\begin{equation} \\left(\\begin{array}{ccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & \\frac{7}{2} \\end{array} \\right) \\left.\\begin{array}{ccc} L_1 \\\\ L_2 \\\\ L_3\\leftarrow L_3 - \\frac{1}{2}L_2 \\end{array} \\right. \\end{equation}",
@@ -29,6 +17,18 @@ export const QuizMarvel = [
                     heroId: 1009718
                 },
                 {
+                    id: 1,
+                    question: "\\begin{equation}\\left\\{\\begin{array}{cc} x & + & y & = & 2 \\\\ 2x & - & y & = & 1 \\end{array}\\right. \\end{equation} la solution de cette equation est:",
+                    options: [
+                        "\\begin{equation} S =  \\left\\{\\left(1 , 2\\right)\\right\\} \\end{equation}",
+                        "\\begin{equation} S = \\left\\{\\left(1 , 1\\right)\\right\\} \\end{equation}",
+                        "\\begin{equation} S = \\left\\{\\left(\\frac{1}{3} , \\frac{2}{7}\\right)\\right\\} \\end{equation}",
+                        "\\begin{equation} S = \\left\\{\\left(-6 , 1\\right)\\right\\} \\end{equation}"
+                    ],
+                    answer: "\\begin{equation} S = \\left\\{\\left(1 , 1\\right)\\right\\} \\end{equation}",
+                    heroId: 1009362
+                },
+                {
                     id: 2,
                     question: "\\begin{equation}\\left\\{\\begin{array}{ccccccccc} 2x & + & 4y & - & 5z & + & 8t & = & 9 \\\\ x & - & y & +  & 3z & - & 2t & = & 1 \\\\ 2x & - & y & +  & z & + & t & = & 3 \\\\ 2x & + & 4y & -  & 10z & - & 2t & = & -6 \\end{array} \\right. \\end{equation} en mettant ce systeme sur la forme d'une matrice augmente AX = b on obtient:",
                     options: [
@@ -37,91 +37,91 @@ export const QuizMarvel = [
                         "\\begin{equation}\\left(\\begin{array}{cccc} -2  & -4 & -5 & 8 \\\\ 1 & -1 & 3 & -2 \\\\ 2 & -1 & -1 & 1 \\\\ 2 & 2 & -10 & -2 \\end{array}\\right. \\left|\\begin{array}{c} 9 \\\\ 1 \\\\ 13 \\\\ -6 \\end{array}\\right) \\end{equation}",
                         "\\begin{equation}\\left(\\begin{array}{cccc} \\frac{1}{3}  & 4 & -5 & 8 \\\\ 1 & -1 & 3 & -2 \\\\ 2 & -1 & 1 & 1 \\\\ 1 & 2 & -5 & -1 \\end{array}\\right. \\left|\\begin{array}{c} 9 \\\\ 1 \\\\ 3 \\\\ -3 \\end{array}\\right) \\end{equation}",
                     ],
-                    answer: "Peter Parker",
+                    answer: "\\begin{equation}\\left(\\begin{array}{cccc} 2  & 4 & -5 & 8 \\\\ 1 & -1 & 3 & -2 \\\\ 2 & -1 & 1 & 1 \\\\ 2 & 4 & -10 & -2 \\end{array}\\right. \\left|\\begin{array}{c} 9 \\\\ 1 \\\\ 3 \\\\ -6 \\end{array}\\right) \\end{equation}",
                     heroId: 1009610
                 },
                 {
                     id: 3,
-                    question: "Comment s'appelait Wolverine quand il était cavalier d'Apocalypse?",
+                    question: "\\begin{equation}\\left\\{\\begin{array}{cccc} x  & + & y & - & z & = & 1 \\\\ 2x  & - & y & - & \\frac{1}{2}z & = & \\frac{1}{2} \\end{array}\\right. \\end{equation}",
                     options: [
-                        "Rage",
-                        "Death",
-                        "Destruction",
-                        "Oblivion"
+                        "\\begin{equation} S =  \\left\\{\\left(\\begin{array}{c} \\frac{1}{2} + \\frac{1}{2}\\lambda \\\\ -\\frac{1}{2} - \\frac{1}{2}\\lambda \\\\ \\lambda \\end{array}\\right)\\right\\}_{\\lambda \\in \\mathbb{R}}  \\end{equation}",
+                        "\\begin{equation} S =  \\left\\{\\left(\\begin{array}{c} \\frac{1}{2} - \\frac{1}{2}\\lambda \\\\ -\\frac{1}{3} - \\frac{1}{2}\\lambda \\\\ \\lambda \\end{array}\\right)\\right\\}_{\\lambda \\in \\mathbb{R}}  \\end{equation}",
+                        "\\begin{equation} S =  \\left\\{\\left(\\begin{array}{c} \\frac{1}{2} + 2\\lambda \\\\ -\\frac{1}{2} - \\frac{1}{2}\\lambda \\\\ \\lambda \\end{array}\\right)\\right\\}_{\\lambda \\in \\mathbb{R}}  \\end{equation}",
+                        "\\begin{equation} S =  \\left\\{\\left(\\begin{array}{c} \\frac{1}{2} - \\frac{1}{3}\\lambda \\\\ -\\frac{1}{3} - \\frac{1}{3}\\lambda \\\\ \\lambda \\end{array}\\right)\\right\\}_{\\lambda \\in \\mathbb{R}}  \\end{equation}"
                     ],
-                    answer: "Death",
+                    answer: "\\begin{equation} S =  \\left\\{\\left(\\begin{array}{c} \\frac{1}{2} + \\frac{1}{2}\\lambda \\\\ -\\frac{1}{2} - \\frac{1}{2}\\lambda \\\\ \\lambda \\end{array}\\right)\\right\\}_{\\lambda \\in \\mathbb{R}}  \\end{equation}",
                     heroId: 1009718
                 },
                 {
                     id: 4,
-                    question: "Quel super-héros ne se sépare jamais de son marteau forgé par les nains ?",
+                    question: "\\begin{equation}\\left\\{\\begin{array}{cc} x & + & 2y & + & z & = & 4 \\\\ -x & + & 4y & + & 2z & = & 5 \\\\ -2x & - & y & + & 3z & = & 0 \\end{array}\\right. \\end{equation} en echelonnant la matrice augmente du systeme ci-dessus, on obtient ceci \\begin{equation}\\left(\\begin{array}{cccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & \\frac{7}{2} \\end{array}\\right. \\left|\\begin{array}{c}  4\\\\ 9 \\\\ \\frac{7}{2}\\end{array}\\right) \\end{equation} on peut donc conclure que:",
                     options: [
-                        "Bizarro",
-                        "Flash",
-                        "Venom",
-                        "Thor"
+                        "Il n'y a pas de solution",
+                        "Il ya une solution double",
+                        "Il ya une unique solution",
+                        "il y'a une infinite de solution"
                     ],
-                    answer: "Thor",
+                    answer: "Il ya une unique solution",
                     heroId: 1009664
                 },
                 {
                     id: 5,
-                    question: "Quelle couleur est associée à Hulk ?",
+                    question: "\\begin{equation}\\left\\{\\begin{array}{cc} x & + & y & + & z & = & 3 \\\\ 2x & + & 4y & + & az & = & 8 \\\\ ax & - & y & + & 2z & = & 5 \\end{array}\\right. \\end{equation} trouvez la valeur de a pour que la solution de ce systeme soit {(1,1,1)}",
                     options: [
-                        "Le jaune",
-                        "Le rouge",
-                        "Le vert",
-                        "Le bleu"
+                        "2",
+                        "3",
+                        "-2",
+                        "-1"
                     ],
-                    answer: "Le vert",
+                    answer: "2",
                     heroId: 1009351
                 },
                 {
                     id: 6,
-                    question: "Quel super-héros ressemble à un être de pierre ?",
+                    question: "\\begin{equation}\\left\\{\\begin{array}{cc} x & + & 2y & + & z & = & 4 \\\\ -x & + & 4y & + & 2z & = & 5 \\\\ -2x & - & 4y & - & 2z & = & - & 4 \\end{array}\\right. \\end{equation} en echelonnant la matrice augmente du systeme ci-dessus, on obtient ceci \\begin{equation}\\left(\\begin{array}{cccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & 0 \\end{array}\\right. \\left|\\begin{array}{c}  4\\\\ 9 \\\\ \\\ 0 \\end{array}\\right) \\end{equation} on peut donc conclure que:",
                     options: [
-                        "Plastic Man",
-                        "The Thing",
-                        "Hawkman",
-                        "Superboy"
+                        "Il n'y a pas de solution",
+                        "Il ya une solution double",
+                        "Ilya une unique solution",
+                        "il y'a une infinite de solution"
                     ],
-                    answer: "The Thing",
+                    answer: "il y'a une infinite de solution",
                     heroId: 1009662
                 },
                 {
                     id: 7,
-                    question: "De qui Edwin Jarvis est-il le majordome?",
+                    question: "Question bonus. Qui est le veritable responsable de la guerre entre l'Ukraine et la Russie?",
                     options: [
-                        "Bruce Wayne",
-                        "Charles Xavier",
-                        "Tony Stark",
-                        "Henry Steven"
+                        "C'est moi",
+                        "les etats unis d'amerique",
+                        "Paul Biya",
+                        "La Russie (c'est la bonne reponse)"
                     ],
-                    answer: "Tony Stark",
+                    answer: "La Russie (c'est la bonne reponse)",
                     heroId: 1009368
                 },
                 {
                     id: 8,
-                    question: "Quel super-héros porte un costume inspiré du drapeau américain ?",
+                    question: "soit un systeme d'equation que l'on represente sour forme de matrice AX = b. Comment proceder vous pour determiner X en utilisant la matrice inverse de A",
                     options: [
-                        "Tigra",
-                        "Blade",
-                        "Iron Man",
-                        "Captain America"
+                        "je determine l'inverse de A qui est \\begin{equation}A^{-1}\\end{equation} et je calcule \\begin{equation}X = A^{-1}b\\end{equation}",
+                        "je verifie si la matrice augmenter possede une solution",
+                        "je determine la matrice echelone de A qui est A' et je calcule \\begin{equation}X = A'b\\end{equation}",
+                        "C'est impossible"
                     ],
-                    answer: "Captain America",
+                    answer: "je determine l'inverse de A qui est \\begin{equation}A^{-1}\\end{equation} et je calcule \\begin{equation}X = A^{-1}b\\end{equation}",
                     heroId: 1009220
                 },
                 {
                     id: 9,
-                    question: "Y compris ses pouces, combien de doigts sur les deux mains possède The Thing?",
+                    question: "\\begin{equation}\\left\\{\\begin{array}{cc} x & + & 2y & + & z & = & 4 \\\\ -x & + & 4y & + & 2z & = & 5 \\\\ -2x & - & 4y & - & 2z & = & - & 5 \\end{array}\\right. \\end{equation} en echelonnant la matrice augmente du systeme ci-dessus, on obtient ceci \\begin{equation}\\left(\\begin{array}{cccc} 1 & 2 & 1 \\\\ 0 & 6 & 3 \\\\ 0 & 0 & 0 \\end{array}\\right. \\left|\\begin{array}{c}  4\\\\ 9 \\\\ 3  \\end{array}\\right) \\end{equation} on peut donc conclure que:",
                     options: [
-                        8,
-                        6,
-                        10,
-                        4
+                        "Il n'y a pas de solution",
+                        "Il ya une solution double",
+                        "Ilya une unique solution",
+                        "il y'a une infinite de solution"
                     ],
-                    answer: 8,
+                    answer: "Il n'y a pas de solution",
                     heroId: 1009662
                 }
             ],

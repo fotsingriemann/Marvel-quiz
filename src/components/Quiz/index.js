@@ -129,11 +129,11 @@ class Quiz extends Component{
              this.gameOver(gradeLevel)
         }
 
-        if(!!this.props && !!prevProps){
-            if(!!this.props.userData && !!prevProps.userData){
-                if(this.props.userData.pseudo !== prevProps.userData.pseudo){
+        if(!!this.props /*&& !!prevProps*/){
+            if(!!this.props.userData /*&& !!prevProps.userData*/){
+                //if(this.props.userData.pseudo !== prevProps.userData.pseudo){
                      this.showWelcomeMsg(this.props.userData.pseudo)
-                }
+               // }
             }
         }
     }

@@ -7,6 +7,7 @@ import {CgArrowRightO} from 'react-icons/cg'
 import ReactTooltip from 'react-tooltip';
 import Modal from '../Modal'
 import axios from 'axios'
+import {MathJax} from 'better-react-mathjax'
 
 
 const QuizOver = React.forwardRef((props, ref) => {
@@ -94,7 +95,7 @@ const QuizOver = React.forwardRef((props, ref) => {
 
 	
 	const body = asked.map((question, index) => {
-		return <tr key={index}><td>{question.question}</td><td>{question.answer}</td><td><button onClick={() => openModalInfo(question.heroId)} className='btnInfo'>Infos</button></td></tr>
+		return <tr key={index}><td><MathJax>{question.question}</MathJax></td><td><MathJax>{question.answer}</MathJax></td><td><button onClick={() => openModalInfo(question.heroId)} className='btnInfo'>Infos</button></td></tr>
 	})
 
 
